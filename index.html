@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left-sidebar.css">
+    
+</head>
+<body>
+    <div class="left-sidebar">
+        <div>
+            <div><img class="novatori_logo" src="./images/icons/Novatori_logo.svg" alt=""></div>
+            <div>
+                <img src="./images/icons/calendar_icon.svg" alt="">
+                <img src="./images/icons/layer_icon.svg" alt="">
+                <img src="./images/icons/shop_icon.svg" alt="">
+                <img src="./images/icons/users_icon.svg" alt="">
+                <img src="./images/icons/account_icon.svg" alt="">
+                <img src="./images/icons/chart_pie-icon.svg" alt="">
+            </div>
+        </div>  
+        <div>
+            <img src="./images/icons/help_icon.svg" alt="">
+            <img src="./images/icons/account_logo.svg" alt="">
+        </div>
+    </div>
+    
+    <div class="container">
+    <header>
+        <div class="header_title ">
+            <h1>Courses <span><img src="./images/icons/right_arrow.svg" alt=""></span><span class="subtitle"> React Frontend Developer</span></h1>
+            <div>
+                <img src="./images/swain-profile_pic.png" alt="">
+                <p>Dêmøñ Shådê</p>
+                <img src="./images/icons/down_arrow.svg" alt="" >
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Participants</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Recordings</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_container">
+            <div class="search-container_input">
+                <div class="search">
+                    <div class="search_input">
+                        <input type="image" src="./images/icons/search_icon.svg" alt="search_icon" width="16" height="16">
+                        <input class="search_field" type="text" placeholder="Search...">
+                    </div>
+                    <div class="dropdown">
+                        <img src="./images/icons/status--dropdown_icon.svg" alt="">
+                        <label for="cars"></label>
+                        <select class="search-status_dropdown" id="cars">
+                            <option value="status">Status</option>
+                            <option value="status">status</option>
+                            <option value="status">status</option>
+                            <option value="status">status</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="search_buttons">
+                    <a class="blue_button" href="#"><img src="./images/icons/plus_icon.svg" alt="">Recurring Meeting</a>
+                    <a class="green_button" href="#"><img src="./images/icons/green-plus_icon.svg" alt="">New Meeting</a>
+
+                </div>
+            </div>
+
+            <div class="main_data">
+                <table bgcolor="#171D27" align="center">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Date & Time</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                            <th>Instructor</th>
+                            <th>Enrollment</th>
+                        </tr>
+                    </thead>
+                    <tbody class="main--table_tbody">
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-1'], this)">
+                                D1: Course Presentation
+                            </td>
+                            <td>Friday, 14 January 14:00</td>
+                            <td><div class="duration_div">17 Min</div></td>
+                            <td class="td-1">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming
+                            </td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>9 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-2'], this)">
+                                D2: Figma Interface
+                            </td>
+                            <td>Monday, 17 January 14:00</td>
+                            <td><div class="duration_div">25 Min</div></td>
+                            <td class="td-2">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>18 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-3'], this)">
+                                D3: Global Styles
+                            </td>
+                            <td>Wednesday, 20 January 14:00</td>
+                            <td><div class="duration_div">35 Min</div></td>
+                            <td class="td-3">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>14 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-4'], this)">
+                                D4: Products,Products,Attributes
+                            </td>
+                            <td>Friday, 22 January 14:00</td>
+                            <td><div class="duration_div">20 Min</div></td>
+                            <td class="td-4">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming
+                            </td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>19 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-5'], this)">
+                                D5: Interactive And Animation Types
+                            </td>
+                            <td>Monday, 24 January 14:00</td>
+                            <td><div class="duration_div">25 Min</div></td>
+                            <td class="td-5">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                                <img class="sec_instructorImg" src="./images/leeSin.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>16 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-6'], this)">
+                                D6: Miro Interface
+                            </td>
+                            <td>Wednesday, 27 January 14:00</td>
+                            <td><div class="duration_div">15 Min</div></td>
+                            <td class="td-6">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>17 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-7'], this)">
+                                D7: Fundamentals Of User Experience
+                            </td>
+                            <td>Friday, 29 January 14:00</td>
+                            <td><div class="duration_div">60 Min</div></td>
+                            <td class="td-7">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                                <img class="sec_instructorImg" src="./images/leeSin.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>12 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-8'], this)">
+                                D8: Human-Centered Design
+                            </td>
+                            <td>Monday, 31 January 14:00</td>
+                            <td><div class="duration_div">15 Min</div></td>
+                            <td class="td-8">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>20 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-9'], this)">
+                                D9: Emphaty For The Customer
+                            </td>
+                            <td>Wednesday, 1 February 14:00</td>
+                            <td><div class="duration_div">15 Min</div></td>
+                            <td class="td-9">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>15 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-10'], this)">
+                                D10: Google Drive Interface
+                            </td>
+                            <td>Friday, 3 February 14:00</td>
+                            <td><div class="duration_div">15 Min</div></td>
+                            <td class="td-10">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>20 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-11'], this)">
+                                D11: Defining Objectives And Questions
+                            </td>
+                            <td>Monday, 5 February 14:00	
+                            </td>
+                            <td><div class="duration_div">30 Min</div></td>
+                            <td class="td-11">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>5 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-12'], this)">
+                                D12: Identification Of Customer Problems
+                            </td>
+                            <td>Wednesday, 7 February 14:00</td>
+                            <td><div class="duration_div">15 Min</div></td>
+                            <td class="td-12">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>16 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-13'], this)">
+                                D13: Create A User Profile
+                            </td>
+                            <td>Friday, 9 February 14:00</td>
+                            <td><div class="duration_div">30 Min</div></td>
+                            <td class="td-13">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                                <img class="sec_instructorImg" src="./images/leeSin.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>17 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-14'], this)">
+                                D14: Create A User Travel Map
+                            </td>
+                            <td>Monday, 12 February 14:00</td>
+                            <td><div class="duration_div">15 Min</div></td>
+                            <td class="td-14">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                                <img class="sec_instructorImg" src="./images/leeSin.png" alt="" >
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>16 Of 20</p>
+                                
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <input type="checkbox" class="checkbox" onclick="changeColor(this)" onchange="changeTdContent(['td-15'], this)">
+                                D15: Defining Customer Problems
+                            </td>
+                            <td>Wednesday, 14 February 14:00</td>
+                            <td><div class="duration_div" >30  Min</div></td>
+                            <td class="td-15">
+                                <img src="./images/icons/statusOrange_icon.svg" alt="">
+                                Upcoming</td>
+                            <td>
+                                <img src="./images/zed.png" alt="">
+                            </td>
+                            <td>
+                                <div class="enrollment_field">
+                                    <p>20 Of 20</p>
+                                    <div><div class="Enrollment_field_insideDiv"></div></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div class="calendar_date">
+                <img src="./images/icons/date-left-arrow_icon.svg" alt="">
+            <h2 align="center">
+                May 2022
+            </h2>
+                <img src="./images/icons/date-right-arrow_icon.svg" alt="">
+            </div>
+            
+            <table class="calendar_table" bgcolor="#171D27" align="center">
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                  
+                <tbody>
+                    <tr>
+                        <td class="disabled_numbers">25</td>
+                        <td class="disabled_numbers">26</td>
+                        <td class="disabled_numbers">27</td>
+                        <td class="disabled_numbers">28</td>
+                        <td class="disabled_numbers">29</td>
+                        <td>30</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td class="checked_number">4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td class="checked_date">9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td class="checked_date orange_point">
+                            12
+                            <img src="./images/icons/orange_circle_icon.svg" alt="">
+                        </td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td class="checked_date orange_point">
+                            26
+                            <img src="./images/icons/orange_circle_icon.svg" alt="">
+                        </td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>31</td>
+                        <td class="disabled_numbers">1</td>
+                        <td class="disabled_numbers">2</td>
+                        <td class="disabled_numbers">3</td>
+                        <td class="disabled_numbers">4</td>
+                        <td class="disabled_numbers">5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="drop">
+                <button class="dropbtn" type="button">
+                    Upcoming
+                    <img class="dropdown_arrow" src="./images/icons/down_arrow.svg" alt=""> 
+                </button>
+                <div class="content">
+                    <div>
+                        <h2><span><img src="./images/icons/blue_circle.svg" alt=""></span>D5: Miro Interface</h2>
+                        <div><p><span><img src="./images/icons/blue-calendar_icon.svg" alt=""></span>Wednesday, 14 January 14:00</p></div>
+                    </div>
+                    <div>
+                        <h2><span><img src="./images/icons/blue_circle.svg" alt=""></span>D6: Fundamentals Of User Experience</h2>
+                        <div><p><span><img src="./images/icons/blue-calendar_icon.svg" alt=""></span>Friday, 14 January 14:00</p></div>
+                    </div>
+                    <div>
+                        <h2><span><img src="./images/icons/blue_circle.svg" alt=""></span>D7: Human-Centered Design</h2>
+                        <div><p><span><img src="./images/icons/blue-calendar_icon.svg" alt=""></span>Monday, 14 January 14:00</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <script>
+        function changeColor(checkbox) {
+          var row = checkbox.parentNode.parentNode;
+          var div = row.querySelector('.duration_div');
+          if (checkbox.checked) {
+            row.style.backgroundColor = "#5DD0521A";
+            div.style.backgroundColor = "#5DD05214";
+            div.style.color = "#5DD052";
+            row.style.transition = "background-color 0.3s ease";
+            div.style.transition = "background-color 0.3s ease";
+            div.style.transition = "color 0.3s ease";
+          } else {
+            row.style.backgroundColor = "";
+            div.style.backgroundColor = ""; 
+            div.style.color = "#3396FF";
+            row.style.transition = "background-color 0.3s ease";
+            div.style.transition = "background-color 0.3s ease";
+            div.style.transition = "color 0.3s ease";
+          }
+        }
+
+        
+        
+        function changeTdContent(tdClasses, checkbox) {
+            const greenCircle = './images/icons/green_circleIcon.svg';
+            const orangeCircle = './images/icons/statusOrange_icon.svg';
+        tdClasses.forEach(function(tdClass) {
+            document.querySelectorAll('.' + tdClass).forEach(function(td) {
+            if (checkbox.checked) {
+                td.innerHTML = '<img src="' + greenCircle + '"> Complete';
+                td.style.color = '#5DD052';
+                td.style.transition = "all 0.3s ease";
+            } else {
+                td.innerHTML = '<img src="' + orangeCircle + '"> Upcoming';
+                td.style.color = '#FF9338'; 
+                td.style.transition = "all 0.3s ease";
+            }
+            });
+        });
+        }
+  
+
+    </script>
+
+    
+</body>
+</html>
